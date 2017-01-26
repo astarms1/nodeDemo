@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Site</title>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Thanks for giving me a chance to interview for the developer position. I appreciate the feedback you gave me and wanted to send you something that I am developing from the ground up. Being that I am working doubles for the rest of the week, this will serve as my starting point.</p>
+
+<p>The project currently is written in Node.js., JavaScript, and HTML5. I am using npm to include express.js for better website creation with ejs for MVC. I am creating the site with Sublime Text to easily manage the files and folders that will make up the complete app.  
+
+<p> Below you will find a list of changes that will be completed by the end of this weekend.</p>
+
+<ul>
+	<% for (var i=0; i<changes.length; i++) { %>
+		<li><%= changes[i] %></li>
+	<% } %>
+</ul>
+</body>
+</html>
